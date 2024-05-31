@@ -1,0 +1,30 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<ul>-->
+<!--    <li th:each="employee : ${employees}">-->
+<!--        <span th:text ="${employee.name}"></span> - <span th:text ="${employee.location}"></span>-->
+<!--    </li>-->
+<!--</ul>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Employees</title>
+</head>
+<body>
+<h1>Employee List</h1>
+<ul>
+    <li th:each="employee : ${employees}" style="list-style:none">
+        <h4 th:text="${employee.name}">Employee Name</h4>
+        <h4 th:text="${employee.location}">Employee Name</h4>
+    </li>
+</ul>
+</body>
+</html>
